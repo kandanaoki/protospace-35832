@@ -18,13 +18,13 @@
       </div>
       <div class="prototype__body">
         <div class="prototype__detail">
-          <p class="detail__title">キャッチコピー</p>
+          <p class="detail__title"><%=@prototype.catch_copy%></p>
           <p class="detail__message">
             <%= "プロトタイプのキャッチコピー" %>
           </p>
         </div>
         <div class="prototype__detail">
-          <p class="detail__title">コンセプト</p>
+          <p class="detail__title"><%=@prototype.concept%></p>
           <p class="detail__message">
             <%= "プロトタイプのコンセプト" %>
           </p>
@@ -52,7 +52,6 @@
               <%= link_to comment.user.name, user_path(@prototype.user.id), class: :comment_user %>
             </li>
           <% end %>
-            
           <%# // 投稿に紐づくコメントを一覧する処理を記述する %>
         </ul>
       </div>
